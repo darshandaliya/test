@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+
+
+      
+    }
+    
+    .header {
+      text-align: center;
+      padding: 20px;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+
+    .bg-img {
+
+      background-image: url('D:/Engineering Eighth Semester/colorlib-regform-14/colorlib-regform-14/homepage.jpeg');
+  /* background: #c5e9ff; */
+  padding: 15px 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  
+  
+
+
+    }
+
+    .container {
+      width: 680px;
+      
+      position: relative;
+      margin: 0 auto;
+      box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.1);
+      -o-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.1);
+      
+    
+      
+    
+    }
+    
+    .column img {
+      margin-top: 4px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+<body>
+
+<!-- Header -->
+<div class="bg-img">
+  <div class="header">
+    <h1>Please select your preferred furniture</h1>
+  </div>
+
+<!-- Photo Grid -->
+  <form type=get action="DisplayProduct.html">
+    <div class="container">
+      <div class="row"> 
+        <div class="column">
+          <a href="DisplayProduct.html?img1.jpeg">
+          <img src="D:/Engineering Eighth Semester/colorlib-regform-14/colorlib-regform-14/img1.jpeg" style="width:100%"></a>
+          <a href="DisplayProduct.html?img3.jpeg">
+          <img src="D:/Engineering Eighth Semester/colorlib-regform-14/colorlib-regform-14/img3.jpeg" style="width:100%"></a>
+        </div>
+        <div class="column">
+          <a href="DisplayProduct.html?img2.jpeg">
+          <img src="D:/Engineering Eighth Semester/colorlib-regform-14/colorlib-regform-14/img2.jpeg" style="width:100%"></a>
+        </div>  
+        <div class="column">
+          <a href="DisplayProduct.html?img4.jpeg">
+          <img src="D:/Engineering Eighth Semester/colorlib-regform-14/colorlib-regform-14/img4.jpeg" style="width:100%"></a>
+        </div>
+        <div class="column">
+          <a href="DisplayProduct.html?img5.jpeg">
+          <img src="D:/Engineering Eighth Semester/colorlib-regform-14/colorlib-regform-14/img5.jpeg" style="width:100%"></a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>  
+
+</body>
+</html>
