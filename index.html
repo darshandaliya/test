@@ -12,40 +12,7 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript">
-
-        function validation(){
-
-            var fname=document.getElementById('first_name').value;
-            var lname=document.getElementById('last_name').value;
-            var email=document.getElementById('email_id').value;
-            var mobile=document.getElementById('phone_number').value;
-            var atposition=email.indexOf("@");  
-            var dotposition=email.lastIndexOf("."); 
-
-            if(fname==null || fname=="~`!#$%^&*+=-[]\\\';,/{}|\":<>?" || lname==null || lname=="~`!#$%^&*+=-[]\\\';,/{}|\":<>?"){
-
-                alert("Name cannot be blank or contain special characters");
-                return false;
-            }
-
-            else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){  
-                alert("Please enter a valid email");  
-                return false;  
-            }  
-
-            else if(mobile.length!=10){
-
-                alert("Mobile number must be of 10 digits");
-                return false;
-            }
-
-            else{
-                return true;
-            }
-         
-        } 
-    </script>
+    
 </head>
 <body>
 
@@ -100,7 +67,40 @@
         </section>
 
     </div>
+<script type="text/javascript">
 
+        function validation(){
+
+            var fname=document.getElementById('first_name').value;
+            var lname=document.getElementById('last_name').value;
+            var email=document.getElementById('email_id').value;
+            var mobile=document.getElementById('phone_number').value;
+            var atposition=email.indexOf("@");  
+            var dotposition=email.lastIndexOf("."); 
+
+            if(fname==null || fname=="~`!#$%^&*+=-[]\\\';,/{}|\":<>?" || lname==null || lname=="~`!#$%^&*+=-[]\\\';,/{}|\":<>?"){
+
+                alert("Name cannot be blank or contain special characters");
+                return false;
+            }
+
+            else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){  
+                alert("Please enter a valid email");  
+                return false;  
+            }  
+
+            else if(mobile.length!=10){
+
+                alert("Mobile number must be of 10 digits");
+                return false;
+            }
+
+            else{
+                return true;
+            }
+         
+        } 
+    </script>
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
